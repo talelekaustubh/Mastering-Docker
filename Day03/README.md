@@ -80,12 +80,12 @@ Containers are stateless by nature, meaning if a container is deleted, all data 
 
 1. **Run a container without network access**:
 
-   docker run --rm -d --name troubleshootingtools --network none troubleshootingtools:v10
+   docker run --rm -d --name troubleshootingtools --network none troubleshootingtools:v1
 
 
 2. **Run a container with Docker socket mounted**:
 
-   docker run --rm -d --name troubleshootingtools -v /var/run/docker.sock:/var/run/docker.sock --network none troubleshootingtools:v10
+   docker run --rm -d --name troubleshootingtools -v /var/run/docker.sock:/var/run/docker.sock --network none troubleshootingtools:v1
 
 
 3. **Inspect the container**:
